@@ -1,7 +1,7 @@
-import { ArrowLeft, TextIcon } from 'lucide-react'
+import { ArrowLeft, Skull, TextIcon, Upload } from 'lucide-react'
 import React, { useState } from 'react'
 
-const StoryModel = ({setShowModal, fetchStories}) => {
+const StoryModal = ({setShowModal, fetchStories}) => {
 
     const bgColors = ["#4f46e5", "#7c3aed", "#db2777", "#e11d48", "#ca8a04", "#0d9488"]
     
@@ -11,7 +11,7 @@ const StoryModel = ({setShowModal, fetchStories}) => {
     const [media, setMedia] = useState(null)
     const [previewUrl, setPreviewUrl] = useState(null)
 
-    const handleMediaChange = (e) => {
+    const handleMediaUpload = (e) => {
         const file = e.target.files?.[0]
         if(file){
             setMedia(file)
@@ -42,7 +42,7 @@ return (
                 {
                     mode === 'media' && previewUrl && (
                         media?.type.startsWith('image') ? (
-                            <img src={previewUrl} alt="" className='object-contai max-h-full'/>
+                            <img src={previewUrl} alt="" className='object-contain max-h-full'/>
                         ) : (
                             <video src={previewUrl} className='object-contain max-h-full'/>
                         )
@@ -55,13 +55,20 @@ return (
                 ))}
             </div>
             <div className='flex gap-2 mt-4'>
-                <button onClick={()=> {setMode('text'); setMedia(null); setPreviewUrl(null)}} className={`flex-1 flex items-center justify-center gap-2 p-2 rounded ${mode === 'text' ? "bg-white text-black" : "bg-zinc-800"}`}>
+                <button onClick={()=> {setMode('text'); setMedia(null); setPreviewUrl(null)}} className={`flex-1 flex items-center justify-center gap-2 p-2 rounded cursor-pointer ${mode === 'text' ? "bg-white text-black" : "bg-zinc-800"}`}>
                     <TextIcon size={18} /> Text
                 </button>
+                <label className={`flex-1 flex items-center justify-center gap-2 p-2 rounded cursor-pointer ${mode === 'media' ? "bg-white text-black" : "bg-zinc-800"}`}>
+                    <input onChange={(e)=>{handleMediaUpload(e); setMode('media')}} type="file" accept='image/*, video/*' className='hidden' />
+                    <Upload size={18}/> Photo/Video
+                </label>
             </div>
+            <button className='flex items-center justify-center gap-2 text-white py-3 mt-4 w-full rounded bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-idigo-600 hover:to-purple-700 active:scale-95 transition cursor-pointer'>
+                <Skull size={18}/> Create Story
+            </button>
         </div>
     </div>
   )
 }
 
-export default StoryModel
+export default StoryModal
