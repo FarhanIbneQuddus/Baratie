@@ -3,6 +3,7 @@ import { assets, dummyPostsData } from '../assets/assets'
 import Loading from '../components/Loading'
 import StoriesBar from '../components/StoriesBar'
 import PostCard from '../components/PostCard'
+import RecentMessages from '../components/RecentMessages'
 
 
 const Feed = () => {
@@ -21,7 +22,7 @@ const Feed = () => {
   },[])
 
   return !loading ? (
-    <div className='h-full overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
+    <div className='h-full bg-indigo-300 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
       {/*  Stories and post lists */}
         <div>
           <StoriesBar />
@@ -40,7 +41,7 @@ const Feed = () => {
             <p className='text-slate-600'>Email marketing</p>
             <p className='text-slate-400'>Supercharge your marketing with a powerful. easy-to-use platform built for results</p>
           </div>
-          <h1>Recent messages</h1>
+            <RecentMessages/>
         </div>    
     </div>
   ) : <Loading />
