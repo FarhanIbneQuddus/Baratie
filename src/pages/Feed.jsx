@@ -22,7 +22,7 @@ const Feed = () => {
   },[])
 
   return !loading ? (
-    <div className='h-full bg-indigo-300 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
+    <div className='h-full bg-yellow-100 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
       {/*  Stories and post lists */}
         <div>
           <StoriesBar />
@@ -38,8 +38,8 @@ const Feed = () => {
           <div className='max-w-xs bg-white text-xs p-4 rounded-md inline-flex flex-col gap-2 shadow'>
             <h3 className='text-slate-800 font-semibold'>Sponsored</h3>
             <img src={assets.sponsored_img} className='w-75 h-50 rounded-md' alt="" />
-            <p className='text-slate-600'>Email marketing</p>
-            <p className='text-slate-400'>Supercharge your marketing with a powerful. easy-to-use platform built for results</p>
+            <p className='text-slate-600'>News Media marketing</p>
+            <p className='text-slate-400'>Latest news reporting straight from the Grandline, how the New World is in Uproar</p>
           </div>
             <RecentMessages/>
         </div>    

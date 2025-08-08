@@ -14,21 +14,16 @@ const Login = () => {
             <img src={assets.logo} alt="" className='h-30 object-contain ' />
             <div>
                 <div className='flex items-center gap-3 mb-4 max-md:mt-10'>
-                    <img src={assets.group_users} alt="" className='h-8 md:h10' />
+                    <img src={assets.group_users} alt="" className='h-20 md:h10' />
                     <div>
                         <div className='flex'>
                             {Array(5).fill(0).map((_, i)=>(<Star key={i} className='size-4 md:size-4.5 text-transparent fill-amber-500'/>))}
                         </div>
-                        <p>Used by 12k+ Strawhat Fleet</p>
+                        <p>Used by 12k+ Strawhats</p>
                     </div>
                 </div>
-                <h1 className='text-3xl md:text-6xl md:pb-2 font-bold 
-     bg-gradient-to-r from-yellow-300 to-yellow-200 bg-clip-text text-transparent
-     [-webkit-text-stroke:_0px_rgba(0,0,0,0.7)]
-     [text-stroke:_1.5px_rgba(0,0,0,0.7)]'>More than just friends truly connect</h1>
-                <p className='text-xl md:text-3xl max-w-72 md:max-w-md font-bold
-   bg-gradient-to-r from-yellow-200 to-yellow-100 bg-clip-text text-transparent
-   [-webkit-text-stroke:_1px_#ffffff80] [text-stroke:_1px_#ffffff80]'>connect with global community on Baratie</p>
+                <h1 className='text-3xl md:text-6xl md:pb-2 font-bold bg-gradient-to-r from-yellow-300 to-yellow-200 bg-clip-text text-transparent [-webkit-text-stroke:_0px_rgba(0,0,0,0.7)] [text-stroke:_1.5px_rgba(0,0,0,0.7)]'>More than just friends truly connect</h1>
+                <p className='text-xl md:text-3xl max-w-72 md:max-w-md font-bold bg-gradient-to-r from-yellow-200 to-yellow-100 bg-clip-text text-transparent [-webkit-text-stroke:_1px_#ffffff80] [text-stroke:_1px_#ffffff80]'>connect with global community on Baratie</p>
             </div>
             <span className='md:h-10'></span>
         </div>
