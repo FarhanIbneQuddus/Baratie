@@ -159,7 +159,7 @@ export const dummyPostsData = [
         "user": dummyUserData,
         "content": "",
         "image_urls": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bRIsniWVbpnx4iAvFfa4DWzDjx0g7rtSbQ&s"
+            "https://e1.pxfuel.com/desktop-wallpaper/143/556/desktop-wallpaper-2-anime-one-piece-png-3d-one-piece.jpg"
         ],
         "post_type": "image",
         "likes_count": [
@@ -173,7 +173,7 @@ export const dummyPostsData = [
         "user": dummyUserData,
         "content": "Finally , reached EGGHEAD ! #OnePiecetooshort #Needmoreepisodes",
         "image_urls": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rseU8A3ojoInieDFouVA_K_sMAAhDBtVBg&s"
+            "https://4kwallpapers.com/images/wallpapers/one-piece-egghead-5120x2880-14417.jpeg"
         ],
         "post_type": "text_with_image",
         "likes_count": [],

@@ -22,7 +22,7 @@ const Feed = () => {
   },[])
 
   return !loading ? (
-    <div className='h-full bg-yellow-100 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
+    <div className='h-full bg-gradient-to-r from-yellow-100 to-blue-500 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
       {/*  Stories and post lists */}
         <div>
           <StoriesBar />
@@ -35,7 +35,7 @@ const Feed = () => {
 
       {/* Right sidebar */}
         <div className='max-xl:hidden sticky top-0'>
-          <div className='max-w-xs bg-white text-xs p-4 rounded-md inline-flex flex-col gap-2 shadow'>
+          <div className='bg-gradient-to-r from-indigo-200 to-blue-100 max-w-xs text-xs p-4 rounded-md inline-flex flex-col gap-2 shadow'>
             <h3 className='text-slate-800 font-semibold'>Sponsored</h3>
             <img src={assets.sponsored_img} className='w-75 h-50 rounded-md' alt="" />
             <p className='text-slate-600'>News Media marketing</p>
