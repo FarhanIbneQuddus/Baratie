@@ -27,7 +27,7 @@ export const dummyUserData = {
     "_id": "user_2zdFoZib5lNr614LgkONdD8WG32",
     "email": "admin@example.com",
     "full_name": "Monkey D Luffy",
-    "username": "monkey_d_luffyt",
+    "username": "monkey_d_luffy",
     "bio": "🌍 Dreamer | 📚 Learner | 🚀 Doer\r\nExploring life one step at a time.\r\n✨ Staying curious. Creating with purpose.",
     "profile_picture": sample_profile,
     "cover_photo": sample_cover,
