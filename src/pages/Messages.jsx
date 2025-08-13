@@ -2,6 +2,8 @@ import React from 'react'
 import { dummyConnectionsData } from '../assets/assets'
 import { Eye, MessageSquare } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import bgall from '../assets/bgall.jpg';
+
 
 const Messages = () => {
 
@@ -9,7 +11,7 @@ const Messages = () => {
 
 
   return (
-    <div className='min-h-screen relative bg-gradient-to-r from-yellow-100 to-blue-500'>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}} className='min-h-screen relative bg-gradient-to-r from-yellow-100 to-blue-500'>
       <div className='max-w-5xl mx-auto p-6 pt-20'>
         {/* Title*/}
         <div className='mb-8'>

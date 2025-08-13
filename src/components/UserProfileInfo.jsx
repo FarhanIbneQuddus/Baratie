@@ -4,7 +4,7 @@ import moment from 'moment'
 
 const UserProfileInfo = ({user, posts, profileId, setShowEdit}) => {
   return (
-    <div className='relative py-4 px-6 md:px-8 bg-white'>
+    <div className='relative py-4 px-6 md:px-8 bg-gradient-to-r from-yellow-50 to-blue-300'>
       <div className='flex flex-col md:flex-row items-start gap-6'>
         <div className='w-32 h-32 border-4 border-white shadow-lg absolute -top-16 rounded-full'>
           <img src={user.profile_picture} alt="" className='absolute rounded-full z-2'/>

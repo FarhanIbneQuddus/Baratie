@@ -16,7 +16,7 @@ const PostCard = ({post}) => {
     const navigate = useNavigate()
 
   return (
-    <div className='bg-gradient-to-r from-indigo-100 to-blue-500 rounded-xl shadow p-4 space-y-4 w-full max-w-3xl'>
+    <div className='bg-gradient-to-r from-indigo-100 to-blue-300 rounded-xl shadow p-4 space-y-4 w-full max-w-3xl'>
 
         { /* UserInfo */ }
         <div onClick={()=> navigate('/profile/' + post.user._id)} className='inline-flex items-center gap-3 cursor-pointer'>

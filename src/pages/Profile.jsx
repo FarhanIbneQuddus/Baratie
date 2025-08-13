@@ -6,6 +6,8 @@ import UserProfileInfo from '../components/UserProfileInfo'
 import PostCard from '../components/PostCard'
 import moment from 'moment'
 import ProfileModal from '../components/ProfileModal'
+import bgall from '../assets/bgall.jpg';
+
 
 const Profile = () => {
 
@@ -25,10 +27,10 @@ const Profile = () => {
   },[])
 
   return user ? (
-    <div className='relative h-full overflow-y-scroll bg-gray-50 p-6'>
+    <div className='relative h-full overflow-y-scroll bg-gradient-to-r from-yellow-100 to-blue-500' style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}}>
       <div className='max-w-3xl mx-auto'>
         {/* Profile Card */}
-        <div className='bg-white rounded-2xl shadow overflow-hidden'>
+        <div className='bg-blue rounded-2xl shadow overflow-hidden'>
           {/* Cover Photo */}
           <div className='h-40 md:h-56 bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200'>
             {user.cover_photo && <img src={user.cover_photo} alt='' className='w-full h-full object-cover'/>}
@@ -39,7 +41,7 @@ const Profile = () => {
 
         {/* Tabs */}
         <div className='mt-6'>
-          <div className='bg-white rounded-xl shadow p-1 flex max-w-md mx-auto'>
+          <div className='bg-gradient-to-r from-yellow-50 to-blue-300 rounded-xl shadow p-1 flex max-w-200 mx-auto'>
             {["posts", "media", "likes"].map((tab)=>(
               <button onClick={()=> setActiveTab(tab)} key={tab} className={`flex-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors cursor-pointer ${activeTab === tab ? "bg-indigo-600 text-white" : "text-gray-600 hover:text-gray-900"}`}>
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}

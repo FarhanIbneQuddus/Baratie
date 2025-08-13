@@ -7,6 +7,7 @@ import {
   dummyFollowingData as following,
   dummyPendingConnectionsData as pendingConnections
 } from '../assets/assets'
+import bgall from '../assets/bgall.jpg';
 
 const Connections = () => {
 
@@ -22,7 +23,7 @@ const Connections = () => {
   ]
 
   return (
-    <div className='min-h-screen bg-gradient-to-r from-yellow-100 to-blue-500'>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}} className='min-h-screen bg-gradient-to-r from-yellow-100 to-blue-500'>
       <div className='max-w-6xl mx-auto pl-20 pt-20'>
 
         {/* Title */}
