@@ -5,7 +5,7 @@ import StoriesBar from '../components/StoriesBar'
 import PostCard from '../components/PostCard'
 import RecentMessages from '../components/RecentMessages'
 import bgall from '../assets/bgall.jpg';
-
+import bgnav from '../assets/bgsidebar.png';
 
 const Feed = () => {
   
