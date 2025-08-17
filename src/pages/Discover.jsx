@@ -23,7 +23,7 @@ const Discover = () => {
   }
 
   return (
-    <div className='min-h-screen bg-black/60' style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}}>
+    <div className='min-h-screen bg-black/60' style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgall})`, backgroundPosition: '55% 0%'}}>
       <div className='max-w-6xl mx-auto p-6'>
 
         {/* Title */}
@@ -33,7 +33,7 @@ const Discover = () => {
         <div className='mb-8 shadow-md rounded-xl w-220 border border-slate-200/60 bg-black/40'>
           <div className='mb-8'>
           <h1 className='text-3xl font-bold text-white mb-2 pt-15 pl-14'>Discover People</h1>
-          <p className='text-slate-100 pl-14'>Connect with amazing people and grow your network</p>
+          <p className='text-slate-400 pl-14'>Connect with amazing people and grow your network</p>
         </div>
           <div className='p-6'>
             <div className='relative'>

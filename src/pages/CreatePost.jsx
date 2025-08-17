@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { dummyUserData } from '../assets/assets'
 import { Image, X } from 'lucide-react'
 import toast from 'react-hot-toast'
+import bgall from '../assets/bgall.jpg';
 
 const CreatePost = () => {
 
@@ -16,16 +17,16 @@ const CreatePost = () => {
   }
 
   return (
-    <div className='min-h-screen bg-gradient-to-b from-slate-50 to-white'>
-      <div className='max-w-6xl mx-auto p-6'>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgall})`, backgroundPosition: '55% 0%'}} className='min-h-screen'>
+      <div className='max-w-6xl mx-auto pt-20 pl-23'>
         {/* Title */}
         <div className='mb-8'>
-          <h1 className='text-3xl font-bold text-slate-900 mb-2'>Create Post</h1>
-          <p className='text-slate-600'>Share your thoughts with the world</p>
+          <h1 className='text-3xl font-bold text-white mb-2'>Create Post</h1>
+          <p className='text-slate-400'>Share your thoughts with the world</p>
         </div>
 
         {/* Form */}
-        <div className='max-w-xl bg-white p-4 sm:p-8 sm:pb-3 rounded-xl shadow-md space-y-4'>
+        <div className='max-w-xl bg-gradient-to-r from-indigo-100 to-blue-300 p-4 sm:p-8 sm:pb-3 rounded-xl shadow-md space-y-4'>
           {/* Header */}
           <div className='flex items-center gap-3'>
             <img src={user.profile_picture} alt=""  className='w-12 h-12 rounded-full shadow'/>

@@ -27,7 +27,7 @@ const Profile = () => {
   },[])
 
   return user ? (
-    <div className='relative h-full overflow-y-scroll bg-gradient-to-r from-yellow-100 to-blue-500' style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}}>
+    <div className='relative h-full overflow-y-scroll bg-gradient-to-r from-yellow-100 to-blue-500' style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgall})`, backgroundPosition: '55% 0%'}}>
       <div className='max-w-3xl mx-auto'>
         {/* Profile Card */}
         <div className='bg-blue rounded-2xl shadow overflow-hidden'>

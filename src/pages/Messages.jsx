@@ -11,12 +11,12 @@ const Messages = () => {
 
 
   return (
-    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}} className='min-h-screen relative bg-gradient-to-r from-yellow-100 to-blue-500'>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgall})`, backgroundPosition: '55% 0%'}} className='min-h-screen relative bg-gradient-to-r from-yellow-100 to-blue-500'>
       <div className='max-w-5xl mx-auto p-6 pt-20'>
         {/* Title*/}
         <div className='mb-8'>
-          <h1 className='text-3xl font-bold text-slate-900 mb-2'>Messages</h1>
-          <p className='text-slate-600'>Talk to your friends and family</p>
+          <h1 className='text-3xl font-bold text-white mb-2'>Messages</h1>
+          <p className='text-slate-400'>Talk to your friends and family</p>
         </div>
 
         {/* Connected Users */}

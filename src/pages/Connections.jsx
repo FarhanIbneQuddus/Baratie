@@ -23,13 +23,13 @@ const Connections = () => {
   ]
 
   return (
-    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}} className='min-h-screen bg-gradient-to-r from-yellow-100 to-blue-500'>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgall})`, backgroundPosition: '55% 0%'}} className='min-h-screen bg-gradient-to-r from-yellow-100 to-blue-500'>
       <div className='max-w-6xl mx-auto pl-20 pt-20'>
 
         {/* Title */}
         <div className='mb-8'>
-          <h1 className='text-3xl font-bold text-slate-900 mb-2'>Connections</h1>
-          <p className='text-slate-600'>Manage your network and discover new connections.</p>
+          <h1 className='text-3xl font-bold text-white mb-2'>Connections</h1>
+          <p className='text-slate-400'>Manage your network and discover new connections.</p>
         </div>
         {/* Counts */}
         <div className='mb-8 flex flex-warp gap-6'>

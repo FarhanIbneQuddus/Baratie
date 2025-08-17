@@ -22,7 +22,7 @@ const Feed = () => {
   },[])
 
   return !loading ? (
-    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgall})`, backgroundPosition: 'center'}} className='h-full bg-gradient-to-r from-yellow-100 to-blue-500 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
+    <div style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgall})`, backgroundPosition: '55% 0%'}} className='h-full bg-gradient-to-r from-yellow-100 to-blue-500 overflow-y-scroll no-scrollbar py-10 xl:pr-5 flex items-start justify-center xl:gap-8'>
       {/*  Stories and post lists */}
         <div>
           <StoriesBar />
